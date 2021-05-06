@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.laptrinhjavaweb</groupId>
-	<artifactId>new-jdbc-12-month-2018</artifactId>
+	<groupId>com.manhuaweb</groupId>
+	<artifactId>Manhuaweb</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 
@@ -11,7 +11,7 @@
 		<jstl.version>1.2</jstl.version>
 		<servlet.api.version>3.1.0</servlet.api.version>
 		<sitemesh.version>2.4.2</sitemesh.version>
-		<mysql.version>8.0.13</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<weld.servlet.version>1.1.0.Final</weld.servlet.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -83,6 +83,7 @@
 		</dependency>
 		<!--end json -->
 
+
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
@@ -90,10 +91,18 @@
 		</dependency>
 
 		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
+
 	</dependencies>
 
 	<build>

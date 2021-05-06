@@ -8,8 +8,14 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="<c:url value='/template/login/style.css' />" rel="stylesheet" type="text/css" media="all"/>
+	<link rel="stylesheet"
+	href="<c:url value='/template/admin/cse/style.css' />" />
+	
+	
 </head>
 <body id="LoginForm">
+	<a href='<c:url value="/trang-chu"/>'><img src="./img/ic1.png"
+			style="height: 100px; width: 200px; float: left"></a>
     <dec:body/>
 </body>
 </html>

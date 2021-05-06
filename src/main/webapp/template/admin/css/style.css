@@ -1,0 +1,37 @@
+.headerm {
+	width: 100%;
+	background-color: #333;
+	height: 100px;
+	float: left;
+}
+
+.stuffm {
+	line-height: 75px;
+}
+
+.stuffm p, .stuffm a {
+	color: white;
+	font: Arial;
+	font-size: 15px;
+	float: right;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.stuffm p:hover {
+	color: orange;
+}
+
+.stuffm a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+/* html {
+	background-color: #333;
+}
+ */
+.melu {
+	width: 200px;
+	border: 1px solid red;
+}

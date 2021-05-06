@@ -8,7 +8,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Danh sách bài viết</title>
+		<title>Danh sách truyện</title>
 	</head>
 
 	<body>
@@ -38,13 +38,13 @@
 											<div class="dt-buttons btn-overlap btn-group">
 												<a flag="info"
 												   class="dt-button buttons-colvis btn btn-white btn-primary btn-bold" data-toggle="tooltip"
-												   title='Thêm bài viết' href='<c:url value="/admin-new?type=edit"/>'>
+												   title='Thêm truyện' href='<c:url value="/admin-new?type=edit"/>'>
 															<span>
 																<i class="fa fa-plus-circle bigger-110 purple"></i>
 															</span>
 												</a>
 												<button id="btnDelete" type="button"
-														class="dt-button buttons-html5 btn btn-white btn-primary btn-bold" data-toggle="tooltip" title='Xóa bài viết'>
+														class="dt-button buttons-html5 btn btn-white btn-primary btn-bold" data-toggle="tooltip" title='Xóa truyện'>
 																<span>
 																	<i class="fa fa-trash-o bigger-110 pink"></i>
 																</span>
@@ -61,7 +61,7 @@
 													<tr>
 														<th><input type="checkbox" id="checkAll"></th>
 														<th>Tên truyện</th>
-														<th>Link ảnh</th>
+														<th>Tác giả</th>
 														<th></th>
 													</tr>
 												</thead>
@@ -103,7 +103,7 @@
 		<script>
 			var totalPages = ${model.totalPage};
 			var currentPage = ${model.page};
-			var limit = 2;
+			var limit = 4;
 			$(function () {
 				window.pagObj = $('#pagination').twbsPagination({
 					totalPages: totalPages,
@@ -113,7 +113,7 @@
 						if (currentPage != page) {
 							$('#maxPageItem').val(limit);
 							$('#page').val(page);
-							$('#sortName').val('title');
+							$('#sortName').val('name');
 							$('#sortBy').val('desc');
 							$('#type').val('list');
 							$('#formSubmit').submit();
@@ -138,10 +138,10 @@
 		            contentType: 'application/json',
 		            data: JSON.stringify(data),
 		            success: function (result) {
-		                window.location.href = "${NewURL}?type=list&maxPageItem=2&page=1&message=delete_success";
+		                window.location.href = "${NewURL}?type=list&maxPageItem=7&page=1&message=delete_success";
 		            },
 		            error: function (error) {
-		            	window.location.href = "${NewURL}?type=list&maxPageItem=2&page=1&message=error_system";
+		            	window.location.href = "${NewURL}?type=list&maxPageItem=7&page=1&message=error_system";
 		            }
 		        });
 		    }

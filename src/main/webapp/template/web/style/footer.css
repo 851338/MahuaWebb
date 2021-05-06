@@ -1,0 +1,25 @@
+.feeter {
+	width: 100%;
+	color: white;
+	float:left;
+}
+
+.about, .project, .quicklink {
+	width: 33%;
+	float: left;
+	height: 200px;
+	width: 33%;
+}
+
+.about {
+	border-right: 1px solid red;
+}
+
+.quicklink {
+	border-left: 1px solid red;
+}
+
+.feeter h3 {
+	margin-left: 20px;
+	border-bottom: 1px solid red;
+}
